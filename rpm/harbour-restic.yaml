@@ -33,6 +33,9 @@ Requires:
   - sailfishsilica-qt5 >= 0.10.9
   - libsailfishapp-launcher
   - pyotherside-qml-plugin-python3-qt5
+  - sailfishsecretsdaemon
+  - sailfishsecrets-tool
+  - sailfishsecretsdaemon-secretsplugin-common
 
 # All installed files
 Files:

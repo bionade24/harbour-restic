@@ -14,11 +14,21 @@ TARGET = harbour-restic
 
 CONFIG += sailfishapp_qml
 
+DEPLOY_PATH = /usr/share/$${TARGET}
+
+python.files = python/
+python.files += python/restic
+python.path = $${DEPLOY_PATH}/
+
+INSTALLS += python
+
 DISTFILES += qml/harbour-restic.qml \
     qml/cover/CoverPage.qml \
+    qml/components/BackupPathItem.qml \
+    qml/pages/BackupIncludePathsPage.qml \
+    qml/pages/ConfigPage.qml \
     qml/pages/Main.qml \
-    qml/pages/Settings.qml \
-    python/main.py \
+    qml/pages/TextDialog.qml \
     rpm/harbour-restic.changes.in \
     rpm/harbour-restic.changes.run.in \
     rpm/harbour-restic.spec \
